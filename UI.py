@@ -1,0 +1,913 @@
+
+# -*- coding: utf-8 -*-
+
+# Form implementation generated from reading ui file 'untitled.ui'
+#
+# Created by: PyQt5 UI code generator 5.6
+#
+# WARNING! All changes made in this file will be lost!
+
+from PyQt5 import QtCore, QtGui, QtWidgets
+import ParCheck as model
+class Ui_MainWindow(object):
+    def setupUi(self, MainWindow):
+        MainWindow.setObjectName("MainWindow")
+        MainWindow.resize(773, 654)
+        sizePolicy = QtWidgets.QSizePolicy(QtWidgets.QSizePolicy.Preferred, QtWidgets.QSizePolicy.MinimumExpanding)
+        sizePolicy.setHorizontalStretch(0)
+        sizePolicy.setVerticalStretch(0)
+        sizePolicy.setHeightForWidth(MainWindow.sizePolicy().hasHeightForWidth())
+        MainWindow.setSizePolicy(sizePolicy)
+        self.centralwidget = QtWidgets.QWidget(MainWindow)
+        self.centralwidget.setObjectName("centralwidget")
+        self.tabWidget = QtWidgets.QTabWidget(self.centralwidget)
+        self.tabWidget.setGeometry(QtCore.QRect(0, 0, 771, 651))
+        sizePolicy = QtWidgets.QSizePolicy(QtWidgets.QSizePolicy.Preferred, QtWidgets.QSizePolicy.Preferred)
+        sizePolicy.setHorizontalStretch(0)
+        sizePolicy.setVerticalStretch(0)
+        sizePolicy.setHeightForWidth(self.tabWidget.sizePolicy().hasHeightForWidth())
+        self.tabWidget.setSizePolicy(sizePolicy)
+        self.tabWidget.setContextMenuPolicy(QtCore.Qt.PreventContextMenu)
+        self.tabWidget.setToolTipDuration(24)
+        self.tabWidget.setLayoutDirection(QtCore.Qt.LeftToRight)
+        self.tabWidget.setElideMode(QtCore.Qt.ElideMiddle)
+        self.tabWidget.setDocumentMode(True)
+        self.tabWidget.setTabsClosable(False)
+        self.tabWidget.setMovable(False)
+        self.tabWidget.setTabBarAutoHide(False)
+        self.tabWidget.setObjectName("tabWidget")
+        self.tab_OptPircing = QtWidgets.QWidget()
+        self.tab_OptPircing.setObjectName("tab_OptPircing")
+        self.verticalLayoutWidget_2 = QtWidgets.QWidget(self.tab_OptPircing)
+        self.verticalLayoutWidget_2.setGeometry(QtCore.QRect(0, 0, 771, 631))
+        self.verticalLayoutWidget_2.setObjectName("verticalLayoutWidget_2")
+        self.verticalLayout_3 = QtWidgets.QVBoxLayout(self.verticalLayoutWidget_2)
+        self.verticalLayout_3.setContentsMargins(0, 0, 0, 0)
+        self.verticalLayout_3.setSpacing(10)
+        self.verticalLayout_3.setObjectName("verticalLayout_3")
+        self.verticalLayout_4 = QtWidgets.QVBoxLayout()
+        self.verticalLayout_4.setContentsMargins(-1, -1, -1, 20)
+        self.verticalLayout_4.setObjectName("verticalLayout_4")
+        self.horizontalLayout = QtWidgets.QHBoxLayout()
+        self.horizontalLayout.setSizeConstraint(QtWidgets.QLayout.SetDefaultConstraint)
+        self.horizontalLayout.setContentsMargins(20, 10, 20, 10)
+        self.horizontalLayout.setSpacing(5)
+        self.horizontalLayout.setObjectName("horizontalLayout")
+        self.label_ExerciseType = QtWidgets.QLabel(self.verticalLayoutWidget_2)
+        sizePolicy = QtWidgets.QSizePolicy(QtWidgets.QSizePolicy.Fixed, QtWidgets.QSizePolicy.Preferred)
+        sizePolicy.setHorizontalStretch(0)
+        sizePolicy.setVerticalStretch(0)
+        sizePolicy.setHeightForWidth(self.label_ExerciseType.sizePolicy().hasHeightForWidth())
+        self.label_ExerciseType.setSizePolicy(sizePolicy)
+        self.label_ExerciseType.setObjectName("label_ExerciseType")
+        self.horizontalLayout.addWidget(self.label_ExerciseType)
+        self.comboBox_ExType = QtWidgets.QComboBox(self.verticalLayoutWidget_2)
+        sizePolicy = QtWidgets.QSizePolicy(QtWidgets.QSizePolicy.Preferred, QtWidgets.QSizePolicy.Fixed)
+        sizePolicy.setHorizontalStretch(0)
+        sizePolicy.setVerticalStretch(0)
+        sizePolicy.setHeightForWidth(self.comboBox_ExType.sizePolicy().hasHeightForWidth())
+        self.comboBox_ExType.setSizePolicy(sizePolicy)
+        self.comboBox_ExType.setInsertPolicy(QtWidgets.QComboBox.InsertAlphabetically)
+        self.comboBox_ExType.setObjectName("comboBox_ExType")
+        self.comboBox_ExType.addItem("")
+        self.comboBox_ExType.setItemText(0, "")
+        self.comboBox_ExType.addItem("")
+        self.comboBox_ExType.addItem("")
+        self.comboBox_ExType.addItem("")
+        self.comboBox_ExType.addItem("")
+        self.comboBox_ExType.addItem("")
+        self.comboBox_ExType.addItem("")
+        self.horizontalLayout.addWidget(self.comboBox_ExType)
+        self.label_OptType = QtWidgets.QLabel(self.verticalLayoutWidget_2)
+        sizePolicy = QtWidgets.QSizePolicy(QtWidgets.QSizePolicy.Fixed, QtWidgets.QSizePolicy.Preferred)
+        sizePolicy.setHorizontalStretch(0)
+        sizePolicy.setVerticalStretch(0)
+        sizePolicy.setHeightForWidth(self.label_OptType.sizePolicy().hasHeightForWidth())
+        self.label_OptType.setSizePolicy(sizePolicy)
+        self.label_OptType.setObjectName("label_OptType")
+        self.horizontalLayout.addWidget(self.label_OptType)
+        self.comboBox_OptTpe = QtWidgets.QComboBox(self.verticalLayoutWidget_2)
+        sizePolicy = QtWidgets.QSizePolicy(QtWidgets.QSizePolicy.Preferred, QtWidgets.QSizePolicy.Fixed)
+        sizePolicy.setHorizontalStretch(0)
+        sizePolicy.setVerticalStretch(0)
+        sizePolicy.setHeightForWidth(self.comboBox_OptTpe.sizePolicy().hasHeightForWidth())
+        self.comboBox_OptTpe.setSizePolicy(sizePolicy)
+        self.comboBox_OptTpe.setFocusPolicy(QtCore.Qt.StrongFocus)
+        self.comboBox_OptTpe.setObjectName("comboBox_OptTpe")
+        self.comboBox_OptTpe.addItem("")
+        self.comboBox_OptTpe.setItemText(0, "")
+        self.comboBox_OptTpe.addItem("")
+        self.comboBox_OptTpe.addItem("")
+        self.horizontalLayout.addWidget(self.comboBox_OptTpe)
+        self.label_PMethod_ = QtWidgets.QLabel(self.verticalLayoutWidget_2)
+        sizePolicy = QtWidgets.QSizePolicy(QtWidgets.QSizePolicy.Fixed, QtWidgets.QSizePolicy.Preferred)
+        sizePolicy.setHorizontalStretch(0)
+        sizePolicy.setVerticalStretch(0)
+        sizePolicy.setHeightForWidth(self.label_PMethod_.sizePolicy().hasHeightForWidth())
+        self.label_PMethod_.setSizePolicy(sizePolicy)
+        self.label_PMethod_.setObjectName("label_PMethod_")
+        self.horizontalLayout.addWidget(self.label_PMethod_)
+        self.label_PriceMethod = QtWidgets.QLabel(self.verticalLayoutWidget_2)
+        sizePolicy = QtWidgets.QSizePolicy(QtWidgets.QSizePolicy.Preferred, QtWidgets.QSizePolicy.Ignored)
+        sizePolicy.setHorizontalStretch(0)
+        sizePolicy.setVerticalStretch(20)
+        sizePolicy.setHeightForWidth(self.label_PriceMethod.sizePolicy().hasHeightForWidth())
+        self.label_PriceMethod.setSizePolicy(sizePolicy)
+        self.label_PriceMethod.setFrameShape(QtWidgets.QFrame.Box)
+        self.label_PriceMethod.setText("")
+        self.label_PriceMethod.setObjectName("label_PriceMethod")
+        self.horizontalLayout.addWidget(self.label_PriceMethod)
+        self.verticalLayout_4.addLayout(self.horizontalLayout)
+        self.line = QtWidgets.QFrame(self.verticalLayoutWidget_2)
+        self.line.setFrameShape(QtWidgets.QFrame.HLine)
+        self.line.setFrameShadow(QtWidgets.QFrame.Sunken)
+        self.line.setObjectName("line")
+        self.verticalLayout_4.addWidget(self.line)
+        self.verticalLayout_3.addLayout(self.verticalLayout_4)
+        self.gridLayout_3 = QtWidgets.QGridLayout()
+        self.gridLayout_3.setSizeConstraint(QtWidgets.QLayout.SetNoConstraint)
+        self.gridLayout_3.setContentsMargins(20, -1, 20, 20)
+        self.gridLayout_3.setHorizontalSpacing(10)
+        self.gridLayout_3.setVerticalSpacing(12)
+        self.gridLayout_3.setObjectName("gridLayout_3")
+        self.lineEdit_S02 = QtWidgets.QLineEdit(self.verticalLayoutWidget_2)
+        sizePolicy = QtWidgets.QSizePolicy(QtWidgets.QSizePolicy.Preferred, QtWidgets.QSizePolicy.Fixed)
+        sizePolicy.setHorizontalStretch(0)
+        sizePolicy.setVerticalStretch(0)
+        sizePolicy.setHeightForWidth(self.lineEdit_S02.sizePolicy().hasHeightForWidth())
+        self.lineEdit_S02.setSizePolicy(sizePolicy)
+        self.lineEdit_S02.setToolTipDuration(-2)
+        self.lineEdit_S02.setCursorPosition(3)
+        self.lineEdit_S02.setAlignment(QtCore.Qt.AlignRight|QtCore.Qt.AlignTrailing|QtCore.Qt.AlignVCenter)
+        self.lineEdit_S02.setObjectName("lineEdit_S02")
+        self.gridLayout_3.addWidget(self.lineEdit_S02, 2, 2, 1, 1)
+        self.label_UnderlyingP = QtWidgets.QLabel(self.verticalLayoutWidget_2)
+        sizePolicy = QtWidgets.QSizePolicy(QtWidgets.QSizePolicy.Fixed, QtWidgets.QSizePolicy.Fixed)
+        sizePolicy.setHorizontalStretch(0)
+        sizePolicy.setVerticalStretch(0)
+        sizePolicy.setHeightForWidth(self.label_UnderlyingP.sizePolicy().hasHeightForWidth())
+        self.label_UnderlyingP.setSizePolicy(sizePolicy)
+        self.label_UnderlyingP.setFrameShape(QtWidgets.QFrame.NoFrame)
+        self.label_UnderlyingP.setMidLineWidth(-8)
+        self.label_UnderlyingP.setObjectName("label_UnderlyingP")
+        self.gridLayout_3.addWidget(self.label_UnderlyingP, 2, 0, 1, 1)
+        self.label_Strike = QtWidgets.QLabel(self.verticalLayoutWidget_2)
+        sizePolicy = QtWidgets.QSizePolicy(QtWidgets.QSizePolicy.Fixed, QtWidgets.QSizePolicy.Fixed)
+        sizePolicy.setHorizontalStretch(0)
+        sizePolicy.setVerticalStretch(0)
+        sizePolicy.setHeightForWidth(self.label_Strike.sizePolicy().hasHeightForWidth())
+        self.label_Strike.setSizePolicy(sizePolicy)
+        self.label_Strike.setObjectName("label_Strike")
+        self.gridLayout_3.addWidget(self.label_Strike, 1, 0, 1, 1)
+        self.label_Expiration = QtWidgets.QLabel(self.verticalLayoutWidget_2)
+        sizePolicy = QtWidgets.QSizePolicy(QtWidgets.QSizePolicy.Fixed, QtWidgets.QSizePolicy.Fixed)
+        sizePolicy.setHorizontalStretch(0)
+        sizePolicy.setVerticalStretch(0)
+        sizePolicy.setHeightForWidth(self.label_Expiration.sizePolicy().hasHeightForWidth())
+        self.label_Expiration.setSizePolicy(sizePolicy)
+        self.label_Expiration.setObjectName("label_Expiration")
+        self.gridLayout_3.addWidget(self.label_Expiration, 0, 0, 1, 1)
+        self.lineEdit_T = QtWidgets.QLineEdit(self.verticalLayoutWidget_2)
+        sizePolicy = QtWidgets.QSizePolicy(QtWidgets.QSizePolicy.Preferred, QtWidgets.QSizePolicy.Fixed)
+        sizePolicy.setHorizontalStretch(0)
+        sizePolicy.setVerticalStretch(0)
+        sizePolicy.setHeightForWidth(self.lineEdit_T.sizePolicy().hasHeightForWidth())
+        self.lineEdit_T.setSizePolicy(sizePolicy)
+        self.lineEdit_T.setAlignment(QtCore.Qt.AlignBottom|QtCore.Qt.AlignRight|QtCore.Qt.AlignTrailing)
+        self.lineEdit_T.setObjectName("lineEdit_T")
+        self.gridLayout_3.addWidget(self.lineEdit_T, 0, 1, 1, 1)
+        self.lineEdit_K = QtWidgets.QLineEdit(self.verticalLayoutWidget_2)
+        sizePolicy = QtWidgets.QSizePolicy(QtWidgets.QSizePolicy.Preferred, QtWidgets.QSizePolicy.Fixed)
+        sizePolicy.setHorizontalStretch(0)
+        sizePolicy.setVerticalStretch(0)
+        sizePolicy.setHeightForWidth(self.lineEdit_K.sizePolicy().hasHeightForWidth())
+        self.lineEdit_K.setSizePolicy(sizePolicy)
+        self.lineEdit_K.setAlignment(QtCore.Qt.AlignRight|QtCore.Qt.AlignTrailing|QtCore.Qt.AlignVCenter)
+        self.lineEdit_K.setObjectName("lineEdit_K")
+        self.gridLayout_3.addWidget(self.lineEdit_K, 1, 1, 1, 1)
+        self.lineEdit_S0 = QtWidgets.QLineEdit(self.verticalLayoutWidget_2)
+        sizePolicy = QtWidgets.QSizePolicy(QtWidgets.QSizePolicy.Preferred, QtWidgets.QSizePolicy.Fixed)
+        sizePolicy.setHorizontalStretch(0)
+        sizePolicy.setVerticalStretch(0)
+        sizePolicy.setHeightForWidth(self.lineEdit_S0.sizePolicy().hasHeightForWidth())
+        self.lineEdit_S0.setSizePolicy(sizePolicy)
+        self.lineEdit_S0.setAlignment(QtCore.Qt.AlignRight|QtCore.Qt.AlignTrailing|QtCore.Qt.AlignVCenter)
+        self.lineEdit_S0.setObjectName("lineEdit_S0")
+        self.gridLayout_3.addWidget(self.lineEdit_S0, 2, 1, 1, 1)
+        self.label_Volatility = QtWidgets.QLabel(self.verticalLayoutWidget_2)
+        sizePolicy = QtWidgets.QSizePolicy(QtWidgets.QSizePolicy.Fixed, QtWidgets.QSizePolicy.Fixed)
+        sizePolicy.setHorizontalStretch(0)
+        sizePolicy.setVerticalStretch(0)
+        sizePolicy.setHeightForWidth(self.label_Volatility.sizePolicy().hasHeightForWidth())
+        self.label_Volatility.setSizePolicy(sizePolicy)
+        self.label_Volatility.setObjectName("label_Volatility")
+        self.gridLayout_3.addWidget(self.label_Volatility, 3, 0, 1, 1)
+        self.label_Corr = QtWidgets.QLabel(self.verticalLayoutWidget_2)
+        sizePolicy = QtWidgets.QSizePolicy(QtWidgets.QSizePolicy.Fixed, QtWidgets.QSizePolicy.Fixed)
+        sizePolicy.setHorizontalStretch(0)
+        sizePolicy.setVerticalStretch(0)
+        sizePolicy.setHeightForWidth(self.label_Corr.sizePolicy().hasHeightForWidth())
+        self.label_Corr.setSizePolicy(sizePolicy)
+        self.label_Corr.setObjectName("label_Corr")
+        self.gridLayout_3.addWidget(self.label_Corr, 4, 0, 1, 1)
+        self.lineEdit_corr = QtWidgets.QLineEdit(self.verticalLayoutWidget_2)
+        sizePolicy = QtWidgets.QSizePolicy(QtWidgets.QSizePolicy.Preferred, QtWidgets.QSizePolicy.Fixed)
+        sizePolicy.setHorizontalStretch(0)
+        sizePolicy.setVerticalStretch(0)
+        sizePolicy.setHeightForWidth(self.lineEdit_corr.sizePolicy().hasHeightForWidth())
+        self.lineEdit_corr.setSizePolicy(sizePolicy)
+        self.lineEdit_corr.setAlignment(QtCore.Qt.AlignRight|QtCore.Qt.AlignTrailing|QtCore.Qt.AlignVCenter)
+        self.lineEdit_corr.setObjectName("lineEdit_corr")
+        self.gridLayout_3.addWidget(self.lineEdit_corr, 4, 1, 1, 1)
+        self.lineEdit_sigma2 = QtWidgets.QLineEdit(self.verticalLayoutWidget_2)
+        sizePolicy = QtWidgets.QSizePolicy(QtWidgets.QSizePolicy.Preferred, QtWidgets.QSizePolicy.Fixed)
+        sizePolicy.setHorizontalStretch(0)
+        sizePolicy.setVerticalStretch(0)
+        sizePolicy.setHeightForWidth(self.lineEdit_sigma2.sizePolicy().hasHeightForWidth())
+        self.lineEdit_sigma2.setSizePolicy(sizePolicy)
+        self.lineEdit_sigma2.setEchoMode(QtWidgets.QLineEdit.Normal)
+        self.lineEdit_sigma2.setAlignment(QtCore.Qt.AlignRight|QtCore.Qt.AlignTrailing|QtCore.Qt.AlignVCenter)
+        self.lineEdit_sigma2.setObjectName("lineEdit_sigma2")
+        self.gridLayout_3.addWidget(self.lineEdit_sigma2, 3, 2, 1, 1)
+        self.label_RiskFreeRate = QtWidgets.QLabel(self.verticalLayoutWidget_2)
+        sizePolicy = QtWidgets.QSizePolicy(QtWidgets.QSizePolicy.Fixed, QtWidgets.QSizePolicy.Fixed)
+        sizePolicy.setHorizontalStretch(0)
+        sizePolicy.setVerticalStretch(0)
+        sizePolicy.setHeightForWidth(self.label_RiskFreeRate.sizePolicy().hasHeightForWidth())
+        self.label_RiskFreeRate.setSizePolicy(sizePolicy)
+        self.label_RiskFreeRate.setObjectName("label_RiskFreeRate")
+        self.gridLayout_3.addWidget(self.label_RiskFreeRate, 5, 0, 1, 1)
+        self.lineEdit_sigma = QtWidgets.QLineEdit(self.verticalLayoutWidget_2)
+        sizePolicy = QtWidgets.QSizePolicy(QtWidgets.QSizePolicy.Preferred, QtWidgets.QSizePolicy.Fixed)
+        sizePolicy.setHorizontalStretch(0)
+        sizePolicy.setVerticalStretch(0)
+        sizePolicy.setHeightForWidth(self.lineEdit_sigma.sizePolicy().hasHeightForWidth())
+        self.lineEdit_sigma.setSizePolicy(sizePolicy)
+        self.lineEdit_sigma.setToolTipDuration(0)
+        self.lineEdit_sigma.setAlignment(QtCore.Qt.AlignRight|QtCore.Qt.AlignTrailing|QtCore.Qt.AlignVCenter)
+        self.lineEdit_sigma.setObjectName("lineEdit_sigma")
+        self.gridLayout_3.addWidget(self.lineEdit_sigma, 3, 1, 1, 1)
+        self.lineEdit_RiskFreeRate = QtWidgets.QLineEdit(self.verticalLayoutWidget_2)
+        sizePolicy = QtWidgets.QSizePolicy(QtWidgets.QSizePolicy.Preferred, QtWidgets.QSizePolicy.Fixed)
+        sizePolicy.setHorizontalStretch(0)
+        sizePolicy.setVerticalStretch(0)
+        sizePolicy.setHeightForWidth(self.lineEdit_RiskFreeRate.sizePolicy().hasHeightForWidth())
+        self.lineEdit_RiskFreeRate.setSizePolicy(sizePolicy)
+        self.lineEdit_RiskFreeRate.setAlignment(QtCore.Qt.AlignRight|QtCore.Qt.AlignTrailing|QtCore.Qt.AlignVCenter)
+        self.lineEdit_RiskFreeRate.setObjectName("lineEdit_RiskFreeRate")
+        self.gridLayout_3.addWidget(self.lineEdit_RiskFreeRate, 5, 1, 1, 1)
+        self.label_ErrRed = QtWidgets.QLabel(self.verticalLayoutWidget_2)
+        sizePolicy = QtWidgets.QSizePolicy(QtWidgets.QSizePolicy.Fixed, QtWidgets.QSizePolicy.Fixed)
+        sizePolicy.setHorizontalStretch(0)
+        sizePolicy.setVerticalStretch(0)
+        sizePolicy.setHeightForWidth(self.label_ErrRed.sizePolicy().hasHeightForWidth())
+        self.label_ErrRed.setSizePolicy(sizePolicy)
+        self.label_ErrRed.setObjectName("label_ErrRed")
+        self.gridLayout_3.addWidget(self.label_ErrRed, 7, 3, 1, 1)
+        self.lineEdit_RepoRate = QtWidgets.QLineEdit(self.verticalLayoutWidget_2)
+        sizePolicy = QtWidgets.QSizePolicy(QtWidgets.QSizePolicy.Preferred, QtWidgets.QSizePolicy.Fixed)
+        sizePolicy.setHorizontalStretch(0)
+        sizePolicy.setVerticalStretch(0)
+        sizePolicy.setHeightForWidth(self.lineEdit_RepoRate.sizePolicy().hasHeightForWidth())
+        self.lineEdit_RepoRate.setSizePolicy(sizePolicy)
+        self.lineEdit_RepoRate.setAlignment(QtCore.Qt.AlignRight|QtCore.Qt.AlignTrailing|QtCore.Qt.AlignVCenter)
+        self.lineEdit_RepoRate.setObjectName("lineEdit_RepoRate")
+        self.gridLayout_3.addWidget(self.lineEdit_RepoRate, 6, 1, 1, 1)
+        self.label_ObTime = QtWidgets.QLabel(self.verticalLayoutWidget_2)
+        sizePolicy = QtWidgets.QSizePolicy(QtWidgets.QSizePolicy.Fixed, QtWidgets.QSizePolicy.Fixed)
+        sizePolicy.setHorizontalStretch(0)
+        sizePolicy.setVerticalStretch(0)
+        sizePolicy.setHeightForWidth(self.label_ObTime.sizePolicy().hasHeightForWidth())
+        self.label_ObTime.setSizePolicy(sizePolicy)
+        self.label_ObTime.setToolTipDuration(9)
+        self.label_ObTime.setObjectName("label_ObTime")
+        self.gridLayout_3.addWidget(self.label_ObTime, 7, 0, 1, 1)
+        self.label_RepoRate = QtWidgets.QLabel(self.verticalLayoutWidget_2)
+        sizePolicy = QtWidgets.QSizePolicy(QtWidgets.QSizePolicy.Fixed, QtWidgets.QSizePolicy.Fixed)
+        sizePolicy.setHorizontalStretch(0)
+        sizePolicy.setVerticalStretch(0)
+        sizePolicy.setHeightForWidth(self.label_RepoRate.sizePolicy().hasHeightForWidth())
+        self.label_RepoRate.setSizePolicy(sizePolicy)
+        self.label_RepoRate.setObjectName("label_RepoRate")
+        self.gridLayout_3.addWidget(self.label_RepoRate, 6, 0, 1, 1)
+        self.comboBox_ControlVar = QtWidgets.QComboBox(self.verticalLayoutWidget_2)
+        self.comboBox_ControlVar.setContextMenuPolicy(QtCore.Qt.PreventContextMenu)
+        self.comboBox_ControlVar.setStatusTip("")
+        self.comboBox_ControlVar.setObjectName("comboBox_ControlVar")
+        self.comboBox_ControlVar.addItem("")
+        self.comboBox_ControlVar.addItem("")
+        self.gridLayout_3.addWidget(self.comboBox_ControlVar, 7, 4, 1, 1)
+        self.lineEdit_BinoTreeStep = QtWidgets.QLineEdit(self.verticalLayoutWidget_2)
+        sizePolicy = QtWidgets.QSizePolicy(QtWidgets.QSizePolicy.Preferred, QtWidgets.QSizePolicy.Fixed)
+        sizePolicy.setHorizontalStretch(0)
+        sizePolicy.setVerticalStretch(0)
+        sizePolicy.setHeightForWidth(self.lineEdit_BinoTreeStep.sizePolicy().hasHeightForWidth())
+        self.lineEdit_BinoTreeStep.setSizePolicy(sizePolicy)
+        self.lineEdit_BinoTreeStep.setAlignment(QtCore.Qt.AlignRight|QtCore.Qt.AlignTrailing|QtCore.Qt.AlignVCenter)
+        self.lineEdit_BinoTreeStep.setObjectName("lineEdit_BinoTreeStep")
+        self.gridLayout_3.addWidget(self.lineEdit_BinoTreeStep, 5, 4, 1, 1)
+        self.label_2 = QtWidgets.QLabel(self.verticalLayoutWidget_2)
+        sizePolicy = QtWidgets.QSizePolicy(QtWidgets.QSizePolicy.Fixed, QtWidgets.QSizePolicy.Fixed)
+        sizePolicy.setHorizontalStretch(0)
+        sizePolicy.setVerticalStretch(0)
+        sizePolicy.setHeightForWidth(self.label_2.sizePolicy().hasHeightForWidth())
+        self.label_2.setSizePolicy(sizePolicy)
+        self.label_2.setObjectName("label_2")
+        self.gridLayout_3.addWidget(self.label_2, 5, 3, 1, 1)
+        self.lineEdit_NumPath = QtWidgets.QLineEdit(self.verticalLayoutWidget_2)
+        sizePolicy = QtWidgets.QSizePolicy(QtWidgets.QSizePolicy.Preferred, QtWidgets.QSizePolicy.Fixed)
+        sizePolicy.setHorizontalStretch(0)
+        sizePolicy.setVerticalStretch(0)
+        sizePolicy.setHeightForWidth(self.lineEdit_NumPath.sizePolicy().hasHeightForWidth())
+        self.lineEdit_NumPath.setSizePolicy(sizePolicy)
+        self.lineEdit_NumPath.setAlignment(QtCore.Qt.AlignRight|QtCore.Qt.AlignTrailing|QtCore.Qt.AlignVCenter)
+        self.lineEdit_NumPath.setObjectName("lineEdit_NumPath")
+        self.gridLayout_3.addWidget(self.lineEdit_NumPath, 6, 4, 1, 1)
+        self.label_MCSimuTimes = QtWidgets.QLabel(self.verticalLayoutWidget_2)
+        sizePolicy = QtWidgets.QSizePolicy(QtWidgets.QSizePolicy.Fixed, QtWidgets.QSizePolicy.Fixed)
+        sizePolicy.setHorizontalStretch(0)
+        sizePolicy.setVerticalStretch(0)
+        sizePolicy.setHeightForWidth(self.label_MCSimuTimes.sizePolicy().hasHeightForWidth())
+        self.label_MCSimuTimes.setSizePolicy(sizePolicy)
+        self.label_MCSimuTimes.setObjectName("label_MCSimuTimes")
+        self.gridLayout_3.addWidget(self.label_MCSimuTimes, 6, 3, 1, 1)
+        self.lineEdit_ObservationTimes = QtWidgets.QLineEdit(self.verticalLayoutWidget_2)
+        sizePolicy = QtWidgets.QSizePolicy(QtWidgets.QSizePolicy.Preferred, QtWidgets.QSizePolicy.Fixed)
+        sizePolicy.setHorizontalStretch(0)
+        sizePolicy.setVerticalStretch(0)
+        sizePolicy.setHeightForWidth(self.lineEdit_ObservationTimes.sizePolicy().hasHeightForWidth())
+        self.lineEdit_ObservationTimes.setSizePolicy(sizePolicy)
+        self.lineEdit_ObservationTimes.setMaxLength(32760)
+        self.lineEdit_ObservationTimes.setAlignment(QtCore.Qt.AlignRight|QtCore.Qt.AlignTrailing|QtCore.Qt.AlignVCenter)
+        self.lineEdit_ObservationTimes.setObjectName("lineEdit_ObservationTimes")
+        self.gridLayout_3.addWidget(self.lineEdit_ObservationTimes, 7, 1, 1, 1)
+        self.verticalLayout_3.addLayout(self.gridLayout_3)
+        self.horizontalLayout_2 = QtWidgets.QHBoxLayout()
+        self.horizontalLayout_2.setContentsMargins(250, -1, 250, 0)
+        self.horizontalLayout_2.setSpacing(50)
+        self.horizontalLayout_2.setObjectName("horizontalLayout_2")
+        self.calPriceBtn = QtWidgets.QPushButton(self.verticalLayoutWidget_2)
+        self.calPriceBtn.setObjectName("calPriceBtn")
+        self.horizontalLayout_2.addWidget(self.calPriceBtn)
+        self.resetBtn = QtWidgets.QPushButton(self.verticalLayoutWidget_2)
+        self.resetBtn.setCursor(QtGui.QCursor(QtCore.Qt.ArrowCursor))
+        self.resetBtn.setToolTipDuration(-45)
+        self.resetBtn.setObjectName("resetBtn")
+        self.horizontalLayout_2.addWidget(self.resetBtn)
+        self.verticalLayout_3.addLayout(self.horizontalLayout_2)
+        self.horizontalLayout_3 = QtWidgets.QHBoxLayout()
+        self.horizontalLayout_3.setContentsMargins(20, 30, 20, 30)
+        self.horizontalLayout_3.setSpacing(30)
+        self.horizontalLayout_3.setObjectName("horizontalLayout_3")
+        self.label = QtWidgets.QLabel(self.verticalLayoutWidget_2)
+        sizePolicy = QtWidgets.QSizePolicy(QtWidgets.QSizePolicy.Fixed, QtWidgets.QSizePolicy.Fixed)
+        sizePolicy.setHorizontalStretch(0)
+        sizePolicy.setVerticalStretch(0)
+        sizePolicy.setHeightForWidth(self.label.sizePolicy().hasHeightForWidth())
+        self.label.setSizePolicy(sizePolicy)
+        self.label.setObjectName("label")
+        self.horizontalLayout_3.addWidget(self.label)
+        self.textBrowse = QtWidgets.QTextBrowser(self.verticalLayoutWidget_2)
+        sizePolicy = QtWidgets.QSizePolicy(QtWidgets.QSizePolicy.Preferred, QtWidgets.QSizePolicy.Preferred)
+        sizePolicy.setHorizontalStretch(0)
+        sizePolicy.setVerticalStretch(0)
+        sizePolicy.setHeightForWidth(self.textBrowse.sizePolicy().hasHeightForWidth())
+        self.textBrowse.setSizePolicy(sizePolicy)
+        font = QtGui.QFont()
+        font.setPointSize(11)
+        self.textBrowse.setFont(font)
+        self.textBrowse.setVerticalScrollBarPolicy(QtCore.Qt.ScrollBarAlwaysOff)
+        self.textBrowse.setHorizontalScrollBarPolicy(QtCore.Qt.ScrollBarAlwaysOff)
+        self.textBrowse.setObjectName("textBrowse")
+        self.horizontalLayout_3.addWidget(self.textBrowse)
+        self.verticalLayout_3.addLayout(self.horizontalLayout_3)
+        self.tabWidget.addTab(self.tab_OptPircing, "")
+        self.tab_ImpVol = QtWidgets.QWidget()
+        self.tab_ImpVol.setObjectName("tab_ImpVol")
+        self.line_3 = QtWidgets.QFrame(self.tab_ImpVol)
+        self.line_3.setGeometry(QtCore.QRect(0, 40, 771, 20))
+        self.line_3.setFrameShape(QtWidgets.QFrame.HLine)
+        self.line_3.setFrameShadow(QtWidgets.QFrame.Sunken)
+        self.line_3.setObjectName("line_3")
+        self.label_5 = QtWidgets.QLabel(self.tab_ImpVol)
+        self.label_5.setGeometry(QtCore.QRect(100, 20, 501, 16))
+        self.label_5.setObjectName("label_5")
+        self.verticalLayoutWidget = QtWidgets.QWidget(self.tab_ImpVol)
+        self.verticalLayoutWidget.setGeometry(QtCore.QRect(110, 70, 551, 511))
+        self.verticalLayoutWidget.setObjectName("verticalLayoutWidget")
+        self.verticalLayout_2 = QtWidgets.QVBoxLayout(self.verticalLayoutWidget)
+        self.verticalLayout_2.setContentsMargins(0, 0, 0, 0)
+        self.verticalLayout_2.setObjectName("verticalLayout_2")
+        self.formLayout_2 = QtWidgets.QFormLayout()
+        self.formLayout_2.setContentsMargins(100, -1, 130, -1)
+        self.formLayout_2.setHorizontalSpacing(50)
+        self.formLayout_2.setVerticalSpacing(23)
+        self.formLayout_2.setObjectName("formLayout_2")
+        self.label_OptType_2 = QtWidgets.QLabel(self.verticalLayoutWidget)
+        self.label_OptType_2.setObjectName("label_OptType_2")
+        self.formLayout_2.setWidget(0, QtWidgets.QFormLayout.LabelRole, self.label_OptType_2)
+        self.comboBox_OptTpe_IV = QtWidgets.QComboBox(self.verticalLayoutWidget)
+        self.comboBox_OptTpe_IV.setFocusPolicy(QtCore.Qt.StrongFocus)
+        self.comboBox_OptTpe_IV.setObjectName("comboBox_OptTpe_IV")
+        self.comboBox_OptTpe_IV.addItem("")
+        self.comboBox_OptTpe_IV.setItemText(0, "")
+        self.comboBox_OptTpe_IV.addItem("")
+        self.comboBox_OptTpe_IV.addItem("")
+        self.formLayout_2.setWidget(0, QtWidgets.QFormLayout.FieldRole, self.comboBox_OptTpe_IV)
+        self.label_Expiration_3 = QtWidgets.QLabel(self.verticalLayoutWidget)
+        self.label_Expiration_3.setObjectName("label_Expiration_3")
+        self.formLayout_2.setWidget(1, QtWidgets.QFormLayout.LabelRole, self.label_Expiration_3)
+        self.lineEdit_T_IV = QtWidgets.QLineEdit(self.verticalLayoutWidget)
+        self.lineEdit_T_IV.setAlignment(QtCore.Qt.AlignRight|QtCore.Qt.AlignTrailing|QtCore.Qt.AlignVCenter)
+        self.lineEdit_T_IV.setObjectName("lineEdit_T_IV")
+        self.formLayout_2.setWidget(1, QtWidgets.QFormLayout.FieldRole, self.lineEdit_T_IV)
+        self.label_Strike_3 = QtWidgets.QLabel(self.verticalLayoutWidget)
+        self.label_Strike_3.setObjectName("label_Strike_3")
+        self.formLayout_2.setWidget(2, QtWidgets.QFormLayout.LabelRole, self.label_Strike_3)
+        self.lineEdit_K_IV = QtWidgets.QLineEdit(self.verticalLayoutWidget)
+        self.lineEdit_K_IV.setAlignment(QtCore.Qt.AlignRight|QtCore.Qt.AlignTrailing|QtCore.Qt.AlignVCenter)
+        self.lineEdit_K_IV.setObjectName("lineEdit_K_IV")
+        self.formLayout_2.setWidget(2, QtWidgets.QFormLayout.FieldRole, self.lineEdit_K_IV)
+        self.label_UnderlyingP_3 = QtWidgets.QLabel(self.verticalLayoutWidget)
+        self.label_UnderlyingP_3.setFrameShape(QtWidgets.QFrame.NoFrame)
+        self.label_UnderlyingP_3.setMidLineWidth(-8)
+        self.label_UnderlyingP_3.setObjectName("label_UnderlyingP_3")
+        self.formLayout_2.setWidget(3, QtWidgets.QFormLayout.LabelRole, self.label_UnderlyingP_3)
+        self.lineEdit_S0_IV = QtWidgets.QLineEdit(self.verticalLayoutWidget)
+        sizePolicy = QtWidgets.QSizePolicy(QtWidgets.QSizePolicy.Preferred, QtWidgets.QSizePolicy.Fixed)
+        sizePolicy.setHorizontalStretch(0)
+        sizePolicy.setVerticalStretch(0)
+        sizePolicy.setHeightForWidth(self.lineEdit_S0_IV.sizePolicy().hasHeightForWidth())
+        self.lineEdit_S0_IV.setSizePolicy(sizePolicy)
+        self.lineEdit_S0_IV.setAlignment(QtCore.Qt.AlignRight|QtCore.Qt.AlignTrailing|QtCore.Qt.AlignVCenter)
+        self.lineEdit_S0_IV.setObjectName("lineEdit_S0_IV")
+        self.formLayout_2.setWidget(3, QtWidgets.QFormLayout.FieldRole, self.lineEdit_S0_IV)
+        self.label_RiskFreeRate_3 = QtWidgets.QLabel(self.verticalLayoutWidget)
+        self.label_RiskFreeRate_3.setObjectName("label_RiskFreeRate_3")
+        self.formLayout_2.setWidget(4, QtWidgets.QFormLayout.LabelRole, self.label_RiskFreeRate_3)
+        self.lineEdit_RiskFreeRate_IV = QtWidgets.QLineEdit(self.verticalLayoutWidget)
+        self.lineEdit_RiskFreeRate_IV.setAlignment(QtCore.Qt.AlignRight|QtCore.Qt.AlignTrailing|QtCore.Qt.AlignVCenter)
+        self.lineEdit_RiskFreeRate_IV.setObjectName("lineEdit_RiskFreeRate_IV")
+        self.formLayout_2.setWidget(4, QtWidgets.QFormLayout.FieldRole, self.lineEdit_RiskFreeRate_IV)
+        self.label_RepoRate_3 = QtWidgets.QLabel(self.verticalLayoutWidget)
+        self.label_RepoRate_3.setObjectName("label_RepoRate_3")
+        self.formLayout_2.setWidget(5, QtWidgets.QFormLayout.LabelRole, self.label_RepoRate_3)
+        self.lineEdit_RepoRate_IV = QtWidgets.QLineEdit(self.verticalLayoutWidget)
+        self.lineEdit_RepoRate_IV.setAlignment(QtCore.Qt.AlignRight|QtCore.Qt.AlignTrailing|QtCore.Qt.AlignVCenter)
+        self.lineEdit_RepoRate_IV.setObjectName("lineEdit_RepoRate_IV")
+        self.formLayout_2.setWidget(5, QtWidgets.QFormLayout.FieldRole, self.lineEdit_RepoRate_IV)
+        self.label_Premium_3 = QtWidgets.QLabel(self.verticalLayoutWidget)
+        self.label_Premium_3.setObjectName("label_Premium_3")
+        self.formLayout_2.setWidget(6, QtWidgets.QFormLayout.LabelRole, self.label_Premium_3)
+        self.lineEdit_Premium_IV = QtWidgets.QLineEdit(self.verticalLayoutWidget)
+        self.lineEdit_Premium_IV.setMaxLength(32760)
+        self.lineEdit_Premium_IV.setAlignment(QtCore.Qt.AlignRight|QtCore.Qt.AlignTrailing|QtCore.Qt.AlignVCenter)
+        self.lineEdit_Premium_IV.setObjectName("lineEdit_Premium_IV")
+        self.formLayout_2.setWidget(6, QtWidgets.QFormLayout.FieldRole, self.lineEdit_Premium_IV)
+        self.verticalLayout_2.addLayout(self.formLayout_2)
+        self.horizontalLayout_7 = QtWidgets.QHBoxLayout()
+        self.horizontalLayout_7.setContentsMargins(140, 30, 140, 30)
+        self.horizontalLayout_7.setSpacing(50)
+        self.horizontalLayout_7.setObjectName("horizontalLayout_7")
+        self.calIVBtn = QtWidgets.QPushButton(self.verticalLayoutWidget)
+        self.calIVBtn.setObjectName("calIVBtn")
+        self.horizontalLayout_7.addWidget(self.calIVBtn)
+        self.resIVBtn = QtWidgets.QPushButton(self.verticalLayoutWidget)
+        self.resIVBtn.setObjectName("resIVBtn")
+        self.horizontalLayout_7.addWidget(self.resIVBtn)
+        self.verticalLayout_2.addLayout(self.horizontalLayout_7)
+        self.horizontalLayout_8 = QtWidgets.QHBoxLayout()
+        self.horizontalLayout_8.setContentsMargins(-1, 30, 120, 30)
+        self.horizontalLayout_8.setSpacing(50)
+        self.horizontalLayout_8.setObjectName("horizontalLayout_8")
+        self.label_6 = QtWidgets.QLabel(self.verticalLayoutWidget)
+        self.label_6.setObjectName("label_6")
+        self.horizontalLayout_8.addWidget(self.label_6)
+        self.textBrowser_3 = QtWidgets.QTextBrowser(self.verticalLayoutWidget)
+        font = QtGui.QFont()
+        font.setPointSize(11)
+        self.textBrowser_3.setFont(font)
+        self.textBrowser_3.setObjectName("textBrowser_3")
+        self.horizontalLayout_8.addWidget(self.textBrowser_3)
+        self.verticalLayout_2.addLayout(self.horizontalLayout_8)
+        self.tabWidget.addTab(self.tab_ImpVol, "")
+        self.tab_About = QtWidgets.QWidget()
+        self.tab_About.setObjectName("tab_About")
+        self.textBrowser = QtWidgets.QTextBrowser(self.tab_About)
+        self.textBrowser.setGeometry(QtCore.QRect(100, 120, 611, 321))
+        self.textBrowser.setObjectName("textBrowser")
+        self.tabWidget.addTab(self.tab_About, "")
+        MainWindow.setCentralWidget(self.centralwidget)
+
+        self.retranslateUi(MainWindow)
+        self.tabWidget.setCurrentIndex(0)
+        self.comboBox_ExType.setCurrentIndex(-1)
+        QtCore.QMetaObject.connectSlotsByName(MainWindow)
+
+    def retranslateUi(self, MainWindow):
+        _translate = QtCore.QCoreApplication.translate
+        MainWindow.setWindowTitle(_translate("MainWindow", "MainWindow"))
+        self.label_ExerciseType.setText(_translate("MainWindow", "Option Exercise Type"))
+        self.comboBox_ExType.setItemText(1, _translate("MainWindow", "European"))
+        self.comboBox_ExType.setItemText(2, _translate("MainWindow", "American"))
+        self.comboBox_ExType.setItemText(3, _translate("MainWindow", "Geometric  Mean Asian"))
+        self.comboBox_ExType.setItemText(4, _translate("MainWindow", "Arithmetric Mean  Asian"))
+        self.comboBox_ExType.setItemText(5, _translate("MainWindow", "Geometric Basket"))
+        self.comboBox_ExType.setItemText(6, _translate("MainWindow", "Arithmetric Basket"))
+        self.label_OptType.setText(_translate("MainWindow", "Option Type"))
+        self.comboBox_OptTpe.setItemText(1, _translate("MainWindow", "CALL"))
+        self.comboBox_OptTpe.setItemText(2, _translate("MainWindow", "PUT"))
+        self.label_PMethod_.setText(_translate("MainWindow", "Pricing Method"))
+        self.lineEdit_S02.setText(_translate("MainWindow", "0.0"))
+        self.label_UnderlyingP.setText(_translate("MainWindow", "Underlying Price"))
+        self.label_Strike.setText(_translate("MainWindow", "Strike"))
+        self.label_Expiration.setText(_translate("MainWindow", "Expiration in years"))
+        self.lineEdit_T.setText(_translate("MainWindow", "0.0"))
+        self.lineEdit_K.setText(_translate("MainWindow", "0.0"))
+        self.lineEdit_S0.setText(_translate("MainWindow", "0.0"))
+        self.label_Volatility.setText(_translate("MainWindow", "Volatility"))
+        self.label_Corr.setText(_translate("MainWindow", "Correlation"))
+        self.lineEdit_corr.setText(_translate("MainWindow", "0.0"))
+        self.lineEdit_sigma2.setText(_translate("MainWindow", "0.0"))
+        self.label_RiskFreeRate.setText(_translate("MainWindow", "Risk Free Rate"))
+        self.lineEdit_sigma.setText(_translate("MainWindow", "0.0"))
+        self.lineEdit_RiskFreeRate.setText(_translate("MainWindow", "0.0"))
+        self.label_ErrRed.setText(_translate("MainWindow", "MC Simulation Error Reducation"))
+        self.lineEdit_RepoRate.setText(_translate("MainWindow", "0.0"))
+        self.label_ObTime.setText(_translate("MainWindow", "Observation Times"))
+        self.label_RepoRate.setText(_translate("MainWindow", "Repo Rate"))
+        self.comboBox_ControlVar.setItemText(0, _translate("MainWindow", "No Control Variable"))
+        self.comboBox_ControlVar.setItemText(1, _translate("MainWindow", "Control Variable"))
+        self.lineEdit_BinoTreeStep.setText(_translate("MainWindow", "0"))
+        self.label_2.setText(_translate("MainWindow", "Binominal Tree Step"))
+        self.lineEdit_NumPath.setText(_translate("MainWindow", "0"))
+        self.label_MCSimuTimes.setText(_translate("MainWindow", "MC Simulation  Times"))
+        self.lineEdit_ObservationTimes.setText(_translate("MainWindow", "0"))
+        self.calPriceBtn.setText(_translate("MainWindow", "Calculate"))
+        self.resetBtn.setText(_translate("MainWindow", "Reset"))
+        self.label.setText(_translate("MainWindow", "Option Price"))
+        self.tabWidget.setTabText(self.tabWidget.indexOf(self.tab_OptPircing), _translate("MainWindow", "Option Pircing"))
+        self.label_5.setText(_translate("MainWindow", "Note:  In this case, the software is only used to calculate the implied volatility of the Europeam Option"))
+        self.label_OptType_2.setText(_translate("MainWindow", "Option Type"))
+        self.comboBox_OptTpe_IV.setItemText(1, _translate("MainWindow", "CALL"))
+        self.comboBox_OptTpe_IV.setItemText(2, _translate("MainWindow", "PUT"))
+        self.label_Expiration_3.setText(_translate("MainWindow", "Expiration in years"))
+        self.lineEdit_T_IV.setText(_translate("MainWindow", "0.0"))
+        self.label_Strike_3.setText(_translate("MainWindow", "Strike"))
+        self.lineEdit_K_IV.setText(_translate("MainWindow", "0.0"))
+        self.label_UnderlyingP_3.setText(_translate("MainWindow", "Underlying Price"))
+        self.lineEdit_S0_IV.setText(_translate("MainWindow", "0.0"))
+        self.label_RiskFreeRate_3.setText(_translate("MainWindow", "Risk Free Rate"))
+        self.lineEdit_RiskFreeRate_IV.setText(_translate("MainWindow", "0.0"))
+        self.label_RepoRate_3.setText(_translate("MainWindow", "Repo Rate"))
+        self.lineEdit_RepoRate_IV.setText(_translate("MainWindow", "0.0"))
+        self.label_Premium_3.setText(_translate("MainWindow", "Premium"))
+        self.lineEdit_Premium_IV.setText(_translate("MainWindow", "0.0"))
+        self.calIVBtn.setText(_translate("MainWindow", "Calculate"))
+        self.resIVBtn.setText(_translate("MainWindow", "Reset"))
+        self.label_6.setText(_translate("MainWindow", "Implied Volatility"))
+        self.tabWidget.setTabText(self.tabWidget.indexOf(self.tab_ImpVol), _translate("MainWindow", "Implied Volatility"))
+        self.textBrowser.setHtml(_translate("MainWindow", "<!DOCTYPE HTML PUBLIC \"-//W3C//DTD HTML 4.0//EN\" \"http://www.w3.org/TR/REC-html40/strict.dtd\">\n"
+"<html><head><meta name=\"qrichtext\" content=\"1\" /><style type=\"text/css\">\n"
+"p, li { white-space: pre-wrap; }\n"
+"</style></head><body style=\" font-family:\'MS Shell Dlg 2\'; font-size:8.25pt; font-weight:400; font-style:normal;\">\n"
+"<p style=\" margin-top:12px; margin-bottom:12px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;\"><span style=\" font-size:9pt;\">This small app is used to calculate the price of 6 types of option:</span></p>\n"
+"<p style=\" margin-top:12px; margin-bottom:12px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;\"><span style=\" font-size:9pt;\">- European</span></p>\n"
+"<p style=\" margin-top:12px; margin-bottom:12px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;\"><span style=\" font-size:9pt;\">- American</span></p>\n"
+"<p style=\" margin-top:12px; margin-bottom:12px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;\"><span style=\" font-size:9pt;\">- Geometric Asian</span></p>\n"
+"<p style=\" margin-top:12px; margin-bottom:12px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;\"><span style=\" font-size:9pt;\">- Arithmtic Asian</span></p>\n"
+"<p style=\" margin-top:12px; margin-bottom:12px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;\"><span style=\" font-size:9pt;\">- Geometric Basket for two underlying assets</span></p>\n"
+"<p style=\" margin-top:12px; margin-bottom:12px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;\"><span style=\" font-size:9pt;\">- Arithmtic Basket for two underlying assets</span></p>\n"
+"<p style=\" margin-top:12px; margin-bottom:12px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;\"><span style=\" font-size:9pt;\"><br /></span></p>\n"
+"<p style=\" margin-top:12px; margin-bottom:12px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;\"><span style=\" font-size:9pt;\">Also, it can calculate the implied volatility of European options (limited to European Option now)</span></p>\n"
+"<p style=\"-qt-paragraph-type:empty; margin-top:12px; margin-bottom:12px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px; font-size:9pt;\"><br /></p>\n"
+"<p style=\" margin-top:12px; margin-bottom:12px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;\"><span style=\" font-size:9pt;\">By: </span><span style=\" font-size:9pt; font-style:italic;\">He, Renjie; Shen, Zhangyi; Ye, Lin</span></p></body></html>"))
+        self.tabWidget.setTabText(self.tabWidget.indexOf(self.tab_About), _translate("MainWindow", "About"))
+
+
+
+
+        
+        self.tabWidget.setTabText(self.tabWidget.indexOf(self.tab_About), _translate("MainWindow", "About"))
+        self.comboBox_ExType.activated.connect(self.ExpTypeMod)
+        self.calPriceBtn.clicked.connect(self.calOptPrice)
+        self.resetBtn.clicked.connect(self.resetValuePrice)
+        self.calIVBtn.clicked.connect(self.calIV)
+        self.resIVBtn.clicked.connect(self.resIV)
+        
+    def ExpTypeMod(self):
+        if  self.comboBox_ExType.currentIndex() == 1:
+            # input for EuroOpt
+            self.lineEdit_K.setEnabled(1)
+            self.lineEdit_S0.setEnabled(1)
+            self.lineEdit_S02.setEnabled(0)
+            self.lineEdit_sigma.setEnabled(1)
+            self.lineEdit_sigma2.setEnabled(0)
+            self.lineEdit_corr.setEnabled(0)
+            self.lineEdit_RepoRate.setEnabled(1)
+            self.lineEdit_RiskFreeRate.setEnabled(1)
+            self.lineEdit_ObservationTimes.setEnabled(0)
+            self.lineEdit_NumPath.setEnabled(0)
+            self.lineEdit_BinoTreeStep.setEnabled(0)
+            self.comboBox_ControlVar.setDisabled(1)
+            _translate = QtCore.QCoreApplication.translate
+            self.label_PriceMethod.setText(_translate("MainWindow", "Black Scholes"))
+        elif self.comboBox_ExType.currentIndex() == 2:
+            # input for AmOpt
+            self.lineEdit_K.setEnabled(1)
+            self.lineEdit_S0.setEnabled(1)
+            self.lineEdit_S02.setEnabled(0)
+            self.lineEdit_sigma.setEnabled(1)
+            self.lineEdit_sigma2.setEnabled(0)
+            self.lineEdit_corr.setEnabled(0)
+            self.lineEdit_RepoRate.setEnabled(0)
+            self.lineEdit_RiskFreeRate.setEnabled(1)
+            self.lineEdit_ObservationTimes.setEnabled(0)
+            self.lineEdit_BinoTreeStep.setEnabled(1)
+            self.lineEdit_NumPath.setEnabled(0)
+            self.comboBox_ControlVar.setEnabled(0)
+            _translate = QtCore.QCoreApplication.translate
+            self.label_PriceMethod.setText(_translate("MainWindow", "Binominal Tree"))
+        elif self.comboBox_ExType.currentIndex() == 3:
+            # input for ArthAsian
+            self.lineEdit_K.setEnabled(1)
+            self.lineEdit_S0.setEnabled(1)
+            self.lineEdit_S02.setEnabled(0)
+            self.lineEdit_sigma.setEnabled(1)
+            self.lineEdit_sigma2.setEnabled(0)
+            self.lineEdit_corr.setEnabled(0)
+            self.lineEdit_RepoRate.setEnabled(0)
+            self.lineEdit_RiskFreeRate.setEnabled(1)
+            self.lineEdit_ObservationTimes.setEnabled(1)
+            self.lineEdit_BinoTreeStep.setEnabled(0)
+            self.lineEdit_NumPath.setEnabled(0)
+            self.comboBox_ControlVar.setEnabled(0)
+            _translate = QtCore.QCoreApplication.translate
+            self.label_PriceMethod.setText(_translate("MainWindow", "Closed Formula"))
+        elif self.comboBox_ExType.currentIndex() == 4:
+            #input for GmtrAsian
+            self.lineEdit_K.setEnabled(1)
+            self.lineEdit_S0.setEnabled(1)
+            self.lineEdit_S02.setEnabled(0)
+            self.lineEdit_sigma.setEnabled(1)
+            self.lineEdit_sigma2.setEnabled(0)
+            self.lineEdit_corr.setEnabled(0)
+            self.lineEdit_RepoRate.setEnabled(0)
+            self.lineEdit_RiskFreeRate.setEnabled(1)
+            self.lineEdit_ObservationTimes.setEnabled(1)
+            self.lineEdit_BinoTreeStep.setEnabled(0)
+            self.lineEdit_NumPath.setEnabled(1)
+            self.comboBox_ControlVar.setEnabled(1)
+            _translate = QtCore.QCoreApplication.translate
+            self.label_PriceMethod.setText(_translate("MainWindow", "MC Simulation"))
+        elif self.comboBox_ExType.currentIndex() == 5:
+            #input for ArthBasket
+            self.lineEdit_K.setEnabled(1)
+            self.lineEdit_S0.setEnabled(1)
+            self.lineEdit_S02.setEnabled(1)
+            self.lineEdit_sigma.setEnabled(1)
+            self.lineEdit_sigma2.setEnabled(1)
+            self.lineEdit_corr.setEnabled(1)
+            self.lineEdit_RepoRate.setEnabled(0)
+            self.lineEdit_RiskFreeRate.setEnabled(1)
+            self.lineEdit_ObservationTimes.setEnabled(0)
+            self.lineEdit_BinoTreeStep.setEnabled(0)
+            self.lineEdit_NumPath.setEnabled(0)
+            self.comboBox_ControlVar.setEnabled(0)
+            _translate = QtCore.QCoreApplication.translate
+            self.label_PriceMethod.setText(_translate("MainWindow", "Closed Formula"))
+        elif self.comboBox_ExType.currentIndex() == 6:
+             #input for GmtrBasket
+            self.lineEdit_K.setEnabled(1)
+            self.lineEdit_S0.setEnabled(1)
+            self.lineEdit_S02.setEnabled(1)
+            self.lineEdit_sigma.setEnabled(1)
+            self.lineEdit_sigma2.setEnabled(1)
+            self.lineEdit_corr.setEnabled(1)
+            self.lineEdit_RepoRate.setEnabled(0)
+            self.lineEdit_RiskFreeRate.setEnabled(1)
+            self.lineEdit_ObservationTimes.setEnabled(0)
+            self.lineEdit_BinoTreeStep.setEnabled(0)
+            self.lineEdit_NumPath.setEnabled(1)
+            self.comboBox_ControlVar.setEnabled(1)
+            _translate = QtCore.QCoreApplication.translate
+            self.label_PriceMethod.setText(_translate("MainWindow", "MC Simulation"))
+            
+            
+        
+
+    def resetValuePrice_(self):
+        _translate = QtCore.QCoreApplication.translate
+        self.lineEdit_K.setEnabled(1)
+        self.lineEdit_S0.setEnabled(1)
+        self.lineEdit_S02.setEnabled(1)
+        self.lineEdit_sigma.setEnabled(1)
+        self.lineEdit_sigma2.setEnabled(1)
+        self.lineEdit_corr.setEnabled(1)
+        self.lineEdit_RepoRate.setEnabled(1)
+        self.lineEdit_RiskFreeRate.setEnabled(1)
+        self.lineEdit_ObservationTimes.setEnabled(1)
+        self.lineEdit_NumPath.setEnabled(1)
+        self.lineEdit_BinoTreeStep.setEnabled(1)
+        self.lineEdit_T.setText(_translate("MainWindow", "0.0"))
+        self.lineEdit_K.setText(_translate("MainWindow", "0.0"))
+        self.lineEdit_S0.setText(_translate("MainWindow", "0.0"))
+        self.lineEdit_S02.setText(_translate("MainWindow", "0.0"))
+        self.lineEdit_sigma.setText(_translate("MainWindow", "0.0"))
+        self.lineEdit_sigma2.setText(_translate("MainWindow", "0.0"))
+        self.lineEdit_corr.setText(_translate("MainWindow", "0.0"))
+        self.lineEdit_RiskFreeRate.setText(_translate("MainWindow", "0.0"))
+        self.lineEdit_RepoRate.setText(_translate("MainWindow", "0.0"))
+        self.lineEdit_ObservationTimes.setText(_translate("MainWindow", "0"))
+        self.lineEdit_BinoTreeStep.setText(_translate("MainWindow", "0"))
+        self.lineEdit_NumPath.setText(_translate("MainWindow", "0"))
+        self.label_PriceMethod.setText(_translate("MainWindow", ""))
+        self.textBrowse.setText(_translate("MainWindow", ""))
+    
+    def resetValuePrice(self):
+        self.resetValuePrice_()
+        self.comboBox_ControlVar.setDisabled(0)
+        self.comboBox_ControlVar.setCurrentIndex(0)
+        self.comboBox_ExType.setCurrentIndex(0)
+        self.comboBox_OptTpe.setCurrentIndex(0)
+    
+    
+    
+    
+    def resIV(self):
+        _translate = QtCore.QCoreApplication.translate
+        self.lineEdit_K_IV.setText(_translate("MainWindow", "0.0"))
+        self.lineEdit_T_IV.setText(_translate("MainWindow", "0.0"))
+        self.lineEdit_S0_IV.setText(_translate("MainWindow", "0.0"))
+        self.lineEdit_RiskFreeRate_IV.setText(_translate("MainWindow", "0.0"))
+        self.lineEdit_RepoRate_IV.setText(_translate("MainWindow", "0.0"))
+        self.lineEdit_Premium_IV.setText(_translate("MainWindow", "0.0"))
+        self.textBrowser_3.setText(_translate("MainWindow", ""))
+        
+       
+    def calOptPrice_(self):   
+        _translate = QtCore.QCoreApplication.translate
+        if self.comboBox_OptTpe.currentIndex() != 0 :
+            OptType = self.comboBox_OptTpe.currentText()
+        else:
+            self.textBrowse.setText(_translate("MainWindow", "please choose an option type !"))
+            return
+        try:
+            r = float(self.lineEdit_RiskFreeRate.text())
+        except Exception:
+            self.textBrowse.setText(_translate("MainWindow", "risk free must be a number !"))
+            return
+            pass
+        try:
+            q = float(self.lineEdit_RepoRate.text())
+        except Exception:
+            self.textBrowse.setText(_translate("MainWindow", "Repo rate must be a number !"))
+            return
+            pass
+        try:
+            T = float(self.lineEdit_T.text())
+        except Exception:
+            self.textBrowse.setText(_translate("MainWindow", "Experation must be a number !"))
+            return
+            pass
+
+        try:
+            S0 = float(self.lineEdit_S0.text())
+            S02 = float(self.lineEdit_S02.text())
+        except Exception:
+            self.textBrowse.setText(_translate("MainWindow", "underlying price must be a number !"))
+            return
+            pass
+        try:
+            sigma = float(self.lineEdit_sigma.text())
+            sigma2 = float(self.lineEdit_sigma2.text())
+        except Exception:
+            self.textBrowse.setText(_translate("MainWindow", " Volatility must be a number !"))
+            return
+            pass
+        try:
+            K = float(self.lineEdit_K.text())
+        except Exception:
+            self.textBrowse.setText(_translate("MainWindow", "Strike must be a number !"))
+            return
+            pass
+        try:
+            N = int(self.lineEdit_BinoTreeStep.text())
+        except Exception:
+            self.textBrowse.setText(_translate("MainWindow", "Number of binomial tree steps must be a integer !"))
+            return
+            pass
+        try:
+            rho = float(self.lineEdit_corr.text())
+        except Exception:
+            self.textBrowse.setText(_translate("MainWindow", "Correlation efficient must be a number !"))
+            return
+            pass
+        try:
+            obTime = int(self.lineEdit_ObservationTimes.text())
+        except Exception:
+            self.textBrowse.setText(_translate("MainWindow", "Observation times for Asian Option must be a integer !"))
+            return
+            pass
+        try:
+            NumPath = int(self.lineEdit_NumPath.text())
+        except Exception:
+            self.textBrowse.setText(_translate("MainWindow", " The number of Path in Monte Carlo silumation must be integer !"))
+            return
+            pass
+       
+        if self.comboBox_ControlVar.currentIndex() == 0:
+            isGmtrCont = 0  
+        else:
+            isGmtrCont = 1
+        
+        if self.comboBox_ExType.currentIndex() == 1:
+            val = model.PriceByBSFormula_inter(T,K,S0,r,sigma,OptType,q)
+        if self.comboBox_ExType.currentIndex() == 2:
+           val = model.PriceBySnell_inter(T,K,S0,r,sigma,OptType,N)    
+        if self.comboBox_ExType.currentIndex() == 3:
+            val = model.PriceByClosedFormulaForGmtrAsian_inter(T, K, obTime, S0,r, sigma, OptType)
+        if self.comboBox_ExType.currentIndex() == 4:        
+            OPT, CI = model.PriceByMCSimulationForArthmAsian_inter(T, K, obTime, S0,r, sigma, OptType, NumPath, isGmtrCont)
+            val = "Option Value:  "+ str(OPT)+"\n" +"95% Confidence Interval:  " +str(CI)
+        if self.comboBox_ExType.currentIndex() == 5:
+            val  = model.PriceByClosedFormulaForGmtBasket_inter(T, K, S0, S02, r, sigma, sigma2, rho, OptType)
+        if self.comboBox_ExType.currentIndex() == 6:
+            OPT, CI = model.PriceByMCSimulationForArthmBasket_inter(T, K, S0,S02,r,sigma, sigma2, rho,OptType , NumPath, isGmtrCont)
+            val = "Option Value:  "+ str(OPT)+"\n" +"95% Confidence Interval:  " +str(CI)
+        self.textBrowse.setText(_translate("MainWindow", str(val)))
+    
+    def calOptPrice(self):       
+        if self.comboBox_ExType.currentIndex() == 0:
+            _translate = QtCore.QCoreApplication.translate
+            self.textBrowse.setText(_translate("MainWindow", "Please Choose the Option Exerise Type"))
+        else:
+            self.calOptPrice_()
+
+
+        
+        
+        
+        
+    def calIV(self):
+        _translate = QtCore.QCoreApplication.translate
+        if self.comboBox_OptTpe_IV.currentIndex() != 0 :
+            OptType = self.comboBox_OptTpe_IV.currentText()
+        else:
+            self.textBrowser_3.setText(_translate("MainWindow", "please choose an option type !"))
+            return
+        try:
+            r = float(self.lineEdit_RiskFreeRate_IV.text())
+        except Exception:
+            self.textBrowser_3.setText(_translate("MainWindow", "Risk free rate must be a number!"))
+            return
+            pass
+        try:
+            T = float(self.lineEdit_T_IV.text())
+        except Exception:
+            self.textBrowser_3.setText(_translate("MainWindow", "Expiration must be a number !"))
+            return
+            pass            
+        try:
+            K = float(self.lineEdit_K_IV.text())
+        except Exception:
+            self.textBrowser_3.setText(_translate("MainWindow", "Strike must be a number!"))
+            return
+            pass
+        try:
+            S0 = float(self.lineEdit_S0_IV.text())
+        except Exception:
+            self.textBrowser_3.setText(_translate("MainWindow", "Underlying price must be a number!"))
+            return
+            pass
+        try:
+            q = float(self.lineEdit_RepoRate_IV.text())
+        except Exception:
+            self.textBrowser_3.setText(_translate("MainWindow", "Repo rate must be a number!"))
+            return
+            pass
+        try:
+            price = float(self.lineEdit_Premium_IV.text())   
+        except Exception:
+            self.textBrowser_3.setText(_translate("MainWindow", " Premium of the option should be a number!"))
+            return
+            pass      
+        IVvalue = str(model.implied_volatility_inter(T,K,S0,r,price,OptType,q))
+        _translate = QtCore.QCoreApplication.translate
+        self.textBrowser_3.setText(_translate("MainWindow", IVvalue)) 
+        
+    
+
+        
+        
+
+if __name__ == "__main__":
+    import sys
+    app = 0
+    app = QtWidgets.QApplication(sys.argv)
+    MainWindow = QtWidgets.QMainWindow()
+    ui = Ui_MainWindow()
+    ui.setupUi(MainWindow)
+    MainWindow.show()
+    sys.exit(app.exec_())
+
